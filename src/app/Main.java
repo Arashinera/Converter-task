@@ -26,12 +26,12 @@ public class Main {
 
     //Створюємо метод для виводу даних :
     public static void valueOutput() {
-        km = converter(miles);
+        km = milesToKmConverter(miles);
         System.out.printf("Your km value equals \"%.3f\"", km);
     }
 
     //Створюємо метод бізнес логіки :
-    public static double converter(double miles) {
+    public static double milesToKmConverter(double miles) {
         return miles / 1.609;
     }
 }
