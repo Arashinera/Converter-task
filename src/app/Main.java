@@ -13,6 +13,7 @@ public class Main {
         valueOutput();
     }
 
+    //Створюємо метод для вводу даних :
     public static void valueInput() {
         Scanner input = new Scanner(System.in);
         input.useLocale(Locale.ENGLISH);
@@ -23,11 +24,13 @@ public class Main {
         input.close();
     }
 
+    //Створюємо метод для виводу даних :
     public static void valueOutput() {
         km = converter(miles);
         System.out.printf("Your km value equals \"%.3f\"", km);
     }
 
+    //Створюємо метод бізнес логіки :
     public static double converter(double miles) {
         return miles / 1.609;
     }
